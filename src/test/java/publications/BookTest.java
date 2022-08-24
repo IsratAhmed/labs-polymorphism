@@ -13,6 +13,7 @@ public class BookTest {
     @BeforeEach
     public void setUp(){
         book = new Book("Brave New World", "Aldous Huxley", "Nightmarish vision of a future society", 11);
+        //book = new Book("Brave New World");
     }
 
     @Test
@@ -21,6 +22,12 @@ public class BookTest {
         String actual = book.calculateMarkUp();
         assertEquals(expected, actual);
     }
+
+    //@Test
+    //public void canBook(){
+    //    String result = book.book("Brave New World");
+    //    assertThat(result).isEqualTo("Victoria cycled 50m");
+    //}
 
     @Test
     public void canPrintAuthorHistory(){
