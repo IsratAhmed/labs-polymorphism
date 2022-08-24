@@ -1,8 +1,12 @@
 package publication;
 
+import interfaces.IBook;
+import interfaces.IMagazine;
+import interfaces.INewspaper;
+
 import java.util.Date;
 
-public abstract class Publication {
+public abstract class Publication implements IBook, IMagazine, INewspaper {
 
     protected String title;
     protected String author;
@@ -61,5 +65,18 @@ public abstract class Publication {
     public String calculateMarkUp(){
         return String.format("The %s read has been added in the shop.", this.title);
     }
+
+    public String book(String title){
+        return String.format("The %s read has been added in the shop.", title);
+    }
+
+    public String magazine(String title){
+        return String.format("The %s read has been added in the shop.", title);
+    }
+
+    public String newspaper(String title){
+        return String.format("The %s read has been added in the shop.", title);
+    }
+
 
 }
