@@ -14,6 +14,7 @@ public class NewspaperTest {
     @BeforeEach
     public void setUp(){
         newspaper = new Newspaper("Orlando Sentinel", "Joy Dickinson", "Nightmarish vision of a future society", 21);
+        //newspaper = new Newspaper("Orlando Sentinel");
     }
 
     @Test

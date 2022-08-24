@@ -26,7 +26,7 @@ public class BookTest {
     //@Test
     //public void canBook(){
     //    String result = book.book("Brave New World");
-    //    assertThat(result).isEqualTo("Victoria cycled 50m");
+    //    assertThat(result).isEqualTo("The Brave New World read has been added in the shop.");
     //}
 
     @Test

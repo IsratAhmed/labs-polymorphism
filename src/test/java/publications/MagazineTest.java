@@ -14,6 +14,7 @@ public class MagazineTest {
     @BeforeEach
     public void setUp(){
         magazine = new Magazine("The Moment That Changed My Life", "Mariska Hargitay", "People", 11);
+        //magazine = new Magazine("The Moment That Changed My Life");
     }
 
     @Test
@@ -22,6 +23,12 @@ public class MagazineTest {
         String actual = magazine.calculateMarkUp();
         assertEquals(expected, actual);
     }
+
+    //@Test
+    //public void canMagazine(){
+    //    String result = magazine.magazine("The Moment That Changed My Life");
+    //    assertThat(result).isEqualTo("The The Moment That Changed My Life read has been added in the shop.");
+    //}
 
     @Test
     public void canAddWordSearch(){
