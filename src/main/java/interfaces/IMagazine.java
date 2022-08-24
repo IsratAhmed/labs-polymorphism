@@ -1,2 +1,6 @@
-package interfaces;public interface IMagazine {
+package interfaces;
+public interface IMagazine {
+
+    String magazine(String title);
+
 }
